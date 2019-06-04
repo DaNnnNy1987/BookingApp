@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<base href='/'>
+	<title>Booking App</title>
+	   <script src="../lib/angular/angular.js"></script>
+	   <script src="../lib/angular-route/angular-route.js"></script>
+	   <script src="../lib/angular/angularCookies.js"></script>
+	<!--  // <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  // 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script> -->
+	<script src="../app/app.js"></script>
+	<script src="../app/routes.js"></script>
+	 <!-- Services -->
+	<script src="../services/authServices1.js"></script>
+	<script src="../services/Session.js"></script>
+	<!-- controllers -->
+	 <script src="../app/mainCtrl.js"></script>
+	 <script src="../app/registerCtrl.js"></script>
+	 <script src="../app/loginCtrl.js"></script>
+	 <script src="../app/dashboardCtrl.js"></script>
+	 <!-- App -->
+ 	
+
+	 <!-- // <script src="../services/authServices.js"></script>
+	
+	<!-- // <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="C:DaNnnNy/Assist/BookingApp/node_modules/boostrap/dist/css/bootstrap.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body ng-app="booking-app" ng-controller="mainCtrl">
+	{{message}} - message {{username}}
+	{{1+1}}
+	<div ng-view>   </div>	
+</body>
+</html>

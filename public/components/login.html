@@ -1,0 +1,23 @@
+<div class="login-form" >
+	<h1 id="title">Booking <i>App</i></h1>
+	<form action="/login" method="POST">
+	<!-- <form action="/login" method="POST" ng-submit='loginCtrl.login(loginData);'> -->
+	
+	<div class="input">
+		<label>Email address</label>
+		<br>
+		<input type="text" ng-model="user.email" name="email" >
+	</div>
+	<div class="input">
+		<label>Password</label>
+		<br>
+		<input type="password" ng-model="user.password" name="password" >
+	</div>
+	<div class="input">
+		<button class="btn-sm-info" ng-click="login();">LOGIN</button><br><br>
+		<!-- <button class="btn-sm-info" type="submit">LOGIN</button><br><br> -->
+		<a class="btn-sm-info" href="/recover" >Recover password</a>
+		
+	</div>
+	</form>
+</div>
